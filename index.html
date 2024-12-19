@@ -4,110 +4,137 @@
         <title>Treesa Sabu's Personal Website</title>
         <link rel="icon" href="assets/logo.png"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"/>
-        <style>
-            .background
-            {
-                opacity: 0.5;
-            }
-            .contact
-            {
-                cursor: pointer;
-                color: #007BFF;
-            }
-        </style>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YS13ZW2PLP"></script>
         <script>
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-
               gtag('config', 'G-YS13ZW2PLP');
         </script>
         <meta name="google-site-verification" content="43bWVlSaq3SRB_xBd7cTNN_4Ib053EMyw9k6qBNmNdc" />
     </head>
     <body>
-        <div style="width: 1440px; height: 900px; position: relative">
-            <div style="width: 1440px; height: 900px; left: 17px; top: 15px; position: absolute; background: white">
-                <div style="width: 1440px; height: 900px; left: 0px; top: 0px; position: absolute; background: rgba(241, 238, 238, 0.08)"></div>
-                <div style="width: 1440px; height: 202px; left: 0px; top: 0px; position: absolute; background: #D9D9D9"></div>
-                <div style="width: 150px; height: 30px; left: 1083px; top: 132px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word" >
-                <a href="works.html">Other Works</a>
-                </div>
-                <div style="width: 150px; height: 30px; left: 1230px; top: 132px; position: absolute; color: #007BFF; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-                    <a class="contact" onclick="scrollDown()">Contact me</a>
-                </div>
-                <script>
-                    function scrollDown() 
-                    {
-                        window.scrollTo(1440, 900);
-                    }
-                </script>
-                <div style="width: 100px; height: 30px; left: 969px; top: 132px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-                    <a href="https://treesasabu98.github.io/projects/">Projects</a>
-                </div>
-                <div style="width: 100px; height: 30px; left: 759px; top: 132px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-                    <a href="https://treesasabu98.github.io/portfolio/">About Me</a>
-                </div>
-                <div style="width: 100px; height: 30px; left: 883px; top: 132px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-                    <a href="https://treesasabu98.github.io/blog/">Blogs</a>
-                </div>
-                <div style="width: 100px; height: 60px; left: 10px; top: 10px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-                    <div style="width: 150px; height: 30px; left: 10px; top: 132px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-                        <a href="https://treesasabu98.github.io/website/">Home</a>
+        <header>
+            <nav>
+                <ul class="nav-bar">
+                    <li class="logo"><a href="#"><img src="/assets/logo.png" alt="logo"></a></li>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="open-menu" aria-label="Open Menu"><i class="fas fa-bars"></i></label>
+                    <div class="menu">
+                        <li><a href="/blogs/blogs.html">Blogs</a></li>
+                        <li><a href="/projects/projects.html">Projects</a></li>
+                        <li><a href="/casestudies/casestudies.html">Case Studies</a></li>
+                        <li><a href="/utopia/utopia.html">Utopia</a></li>
+                        <label for="check" class="close-menu" aria-label="Close Menu"><i class="fas fa-times"></i></label>
                     </div>
-                    <img src="assets/logo.png" height="100px" width="100px">
-                </div>
-                <div style="width: 700px; height: 648px; left: 0px; top: 202px; position: absolute">
-                    <img class="background" src="assets/sea.jpg" height="648px" width="1440px" alt="A beautiful image of sea. Clicked by myself at Alappuzha beach.">
-                    <div style="width: 700px; height: 40px; left: 800px; top: 132px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700">
-                        <b>Hi,<br>
-                         I am Treesa Sabu. <br>
-                        This my personal website.<br>
-                         Explore my profile and the works done by me.<br>
-                            Have a happy journey :)</b>
-                    </div>
-                    <div style="width: 400px; height: 30px; left: 100px; top: 132px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700;">
-                        <i>"Sometimes you climb out of bed in the morning and you think,<br>
-                            I am not going to make it,<br>
-                            but you laugh inside remembering all the times you’ve felt that way."</i><br>
-                          -Charles Bukowski
-                    </div>
-                </div>
-                <div style="width: 1440px; height: 50px; left: 0px; bottom: 0px; position: absolute; background: #D9D9D9">
-                    <div style="width: 110; height: 30px; left: 10px; bottom: 5px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">2024 © Treesa Sabu.</div>
-                    <div style="width: 100px; height: 30px; left: 1100px; bottom: 5px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-                        <a href="mailto: treesasabukappamavunkal@outlook.com">
-                            <img src="assets/email.png" height="30px" width="30px" alt="Link to Email">
-                        </a>
-                    </div>
-                    <div style="width: 100px; height: 30px; left: 1150px; bottom: 5px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-                        <a href="https://github.com/treesasabu98">
-                            <img src="assets/git.png" height="30px" width="30px" alt="Link to GitHub">
-                        </a>
-                    </div>
-                    <div style="width: 100px; height: 30px; left: 1200px; bottom: 5px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-                        <a href="https://www.linkedin.com/in/treesa-sabu-66a029128/">
-                            <img src="assets/linkedin.png" height="30px" width="30px" alt="Link to Linkedin">
-                        </a>
-                    </div>
-                    <div style="width: 100px; height: 30px; left: 1250px; bottom: 5px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-                        <a href="https://x.com/treesa_sabu">
-                            <img src="assets/twitter.png" height="30px" width="30px" alt="Link to twitter X">
-                        </a>
-                    </div>
-                    <div style="width: 100px; height: 30px; left: 1300px; bottom: 5px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-                        <a href="https://www.facebook.com/treesa.sabu.5/">
-                            <img src="assets/facebook.png" height="30px" width="30px" alt="Link to facebook">
-                        </a>
-                    </div>
-                    <div style="width: 100px; height: 30px; left: 1350px; bottom: 5px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-                        <a href="https://www.instagram.com/treesasabukappamavunkal/">
-                            <img src="assets/insta.png" height="30px" width="30px" alt="Link to instagram">
-                        </a>
-                    </div>
-                </div>
-            </div>
-          </div>
+                </ul>
+            </nav>
+        </header>
+        <div class="body-content">
+            <p>
+                <h3>Treesa Sabu</h3>
+                <h4>Software Developer</h4>
+                <br>
+                <b>Technical Skills:</b> SAP Hybris, Java, Python, R, Groovy, Data Analysis and Visualization, Machine learning<br>
+                - <a href="https://www.linkedin.com/in/treesa-sabu-66a029128/">Linkedln Profile<br></a>
+                - <a href="https://github.com/treesasabu98">GitHub<br></a>
+                <br>
+                Software developer with robust problem-solving skills and proven experience in creating and designing software. 
+                5 years experience in fast paced SAP Hybris and Java environment. 
+                Completed MBA in Analytics and Data Science from Manipal University Jaipur.<br>
+                <br>
+                <h5>Work Experience</h5>
+                <b>Application Development Analyst @ Accenture</b><br>
+                <i>Jul 2022 to present</i><br>
+                Developing software for leading US based diamond retailer group.<br>
+                Contributed for moving to REST web services.<br>
+                Working on SAP hybris and java.<br>
+                ACE Skills Star Award for the contribution to the client project.<br>
+                <br>
+                <b>Senior Systems Engineer @ Infosys</b><br>
+                <i>Jan 2022 to Nov 2019</i><br>
+                Developed and implemented quality software solutions based on fortune 500 US automobile manufacturer client requirements with less defects and played an important role in team.<br>
+                Acquired new skills and worked as a team player<br>
+                Insta award in recognition of contribution to the client work<br>
+                Worked on SAP hybris, java and groovy.<br>
+                <br>
+                <h5>Education</h5>
+                <b>Manipal University Jaipur</b><br>
+                <i>Master of Business Administration - Analytics and Data Science</i><br>
+                <i>Sept 2022 - Sept 2024</i><br>
+                <br>
+                <b>Saintgits College of Engineering</b><br>
+                <i>Bachelor of Technology(Hons) - Civil Engineering</i><br>
+                <i>Aug 2015 - Jul 2019</i><br>
+                <br>
+                <h5>Skills</h5>
+                <ul>
+                    <li>Problem Solving</li>
+                    <li>groovy</li>
+                    <li>Critical Thinking
+                    <li>python</li>
+                    <li>Good Communication</li>
+                    <li>SQL</li>
+                    <li>Java</li>
+                    <li>MS Office</li>
+                    <li>SAP Hybris</li>
+                    <li>Agile</li>
+                    <li>Data analysis and visualization</li>
+                    <li>Machine learning</li>
+                </ul>
+                <br>
+                <h5>Certifications</h5>
+                - <a href="https://www.credly.com/badges/9abb7aac-1424-4e80-847f-54d9e76379c9/public_url">SAP Certified Professional - Developer - SAP Commerce Cloud</a><br>
+                - <a href="https://www.credly.com/badges/1e7bb9c5-e2cf-4889-ab4d-8dc51bbaa823">Google Data Analytics Professional Certificate</a><br>
+                - <a href="https://www.credly.com/badges/0252647d-32e0-4fa4-ab71-d05bfdd62c88">Google Business Intelligence Certificate</a><br>
+                - <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/J727HTMTK3JK">Scrum Master Certification Specialization</a><br>
+                - <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/6CXJV9GPL2RN">ICPM Certified Supervisor Specialization</a><br>
+                - <a href="https://www.credly.com/badges/863e1334-c24e-48e1-8873-672a46427522">Google AI Essentials</a><br>
+                - <a href="https://www.credly.com/badges/f0ebdd8d-6c65-4632-be71-bee930ab2afd/public_url">Explore the Technical Essentials of SAP Commerce Cloud</a><br>
+                - <a href="https://www.linkedin.com/in/treesa-sabu-66a029128/details/certifications/">Other Certificates</a><br>
+                <br>
+                <h5>Projects</h5>
+                <b>Analysis To Study Customer Behaviour And Preferences In The Textile Retail Market Of Indian Adults (Age 18 To 40 Years)</b><br>
+                Clothes are one of the major necessities of humans. Consumer analysis will provide great insight into consumer behaviour and preferences, which will help to improve businesses. By studying the demographic features and changes in preferences that depend on demographic features will help to customize each service to each group based on the requirements.A descriptive study is conducted to analyse the behaviour and preferences of textile customers in India in the age group 18-40 (adults). Customers are the key to the success of every industry. What are customers’ wants and needs, What are the factors affecting their purchasing behaviour, etc. need to be studied thoroughly. The factors affecting will change rapidly with time. So, studies of consumer behaviour should be conducted constantly to provide the best service possible and to expand the business to gain more customers that will be loyal to the brand.
+                Primary data is collected through the questionnaire in the form of Google Forms and reached out to people through social media platforms like WhatsApp, Instagram, LinkedIn, etc. The responses are collected from respondents from various genders, ages, educational qualifications, occupations, income groups, different zones of India, etc. Data regarding their preferences on the mode of purchase, the material of purchase, influencing factors, and brand awareness details are collected. Chi square test conducted on certain features of customer textile purchases to determine its dependency to the demographic features of the customers. The major findings are The gender of a person and locality they are living in doesn’t have any significant relationship to the mode of purchase like online or instore. But the fashion choice that a person chooses has a significant relation to the locality they are living in. Education, occupation and income of the customer has a significant role in the spending on textile purchase. Age and customization are related. The older adults like tailored customized dress whereas younger adults prefer readymade dresses. With the help of world cloud, It is found that the most common word that Indian young adults used to describe they purchases is casual. The most preferred dress materials are cotton and denim whereas most preferred colour is black.<br>
+                <br>
+                <b>Experimental Evaluation on Latex DRC60 Modified Bituminous Concrete Wearing Course</b><br>
+                Bituminous concrete wearing course is that part of the pavement upon which traffic travels which is likely to undergo early deterioration. This necessitates the need for frequent maintenance and there by increases the expenditure. Since the problem of deterioration is related to the properties of bituminous concrete mix, researches have been conducted to improve the properties of the mix using additives like nanomaterials, marble dust, latex etc. The objective of this study is to modify pure bitumen using latex DRC60 and evaluate the physical properties of the blend so as to determine its optimum content in bitumen. Further Marshall mix design was carried out for bituminous concrete layer using the modified latex bitumen blend at various binder contents. The specimens were tested for Marshall stability and flow values as well as the density and void calculations. The studies conducted showed that bitumen modified with latex DRC60 had better physical properties and the modified mix had better strength compared to that of conventional bitumen.<br>
+                Published in Proceedings of the International Colloquium on Recent Trends in Engineering (IC@MACE)-2020 Mar 14, 2020 - <a href="/assets/46_PROCEEDINGS.pdf">See details</a><br>
+                <br>
+                <h5>Languages</h5>
+                - English<br>
+                - Malayalam<br>
+                - Hindi<br>
+                <br>
+                <h5>Hobbies</h5>
+                - Badminton<br>
+                - Painting<br>
+                - Gardening<br>
+                - Programming<br>
+                - Web design<br>
+            </p>
+        </div>
+        <footer>
+            <nav>
+                <ul class="nav-bar">
+                    <li><a href="mailto: treesasabukappamavunkal@outlook.com">
+                        <img src="assets/email.png" height="30px" width="30px" alt="Link to Email"></a></li>
+                    <li><a href="https://github.com/treesasabu98">
+                        <img src="assets/git.png" height="30px" width="30px" alt="Link to GitHub"></a></li>
+                    <li><a href="https://www.linkedin.com/in/treesa-sabu-66a029128/">
+                        <img src="assets/linkedin.png" height="30px" width="30px" alt="Link to Linkedin"></a></li>
+                    <li><a href="https://x.com/treesa_sabu">
+                        <img src="assets/twitter.png" height="30px" width="30px" alt="Link to twitter X"></a></li>
+                    <li><a href="https://www.facebook.com/treesa.sabu.5/">
+                        <img src="assets/facebook.png" height="30px" width="30px" alt="Link to facebook"></a></li>
+                    <li><a href="https://www.instagram.com/treesasabukappamavunkal/">
+                        <img src="assets/insta.png" height="30px" width="30px" alt="Link to instagram"></a></li>
+                </ul>
+            </nav>
+        </footer>
     </body>
 </html>
