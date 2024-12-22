@@ -126,11 +126,11 @@ body {
     background-color: #e9e7e7;
     padding: 40px;
     font-size: 1rem;
-    text-align: justify;
 }
 
 @media (min-width: 610px){
     .body-content{
         padding: 40px 80px;
+        text-align: justify;
     }
 }
