@@ -129,12 +129,6 @@ body {
     text-align: justify;
 }
 
-@media (max-width: 610px){
-    .body-content{
-        font-size: 30px;
-    }
-}
-
 @media (min-width: 610px){
     .body-content{
         padding: 40px 80px;
