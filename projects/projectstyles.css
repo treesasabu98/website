@@ -152,3 +152,14 @@ body {
 .tab-content.active {
     display: block;
 }
+h4
+{
+    text-align: center;
+}
+h5{
+    text-decoration: underline;
+}
+p
+{
+    font-size: 1rem;
+}
