@@ -124,14 +124,14 @@ body {
 .tabs {
     display: flex;
     cursor: pointer;
-    background-color: #f1f1f1;
+    background-color: #566160;
     padding: 10px;
 }
 .tabs div {
     flex: 1;
     text-align: center;
     padding: 10px;
-    background-color: #ddd;
+    background-color: #ebdfdf;
     margin: 2px;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -140,7 +140,7 @@ body {
     background-color: #ccc;
 }
 .tabs div.active {
-    background-color: #bbb;
+    background-color: #c7c1c1;
     font-weight: bold;
 }
 .tab-content {
@@ -163,4 +163,14 @@ p
 {
     font-size: 1rem;
     text-align: justify;
+}
+.projectContent{
+    padding: 40px 80px;
+    background-color: #e9e7e7;
+}
+@media (max-width: 610px) {
+    .projectContent
+    {
+        padding: 40px;
+    }
 }
