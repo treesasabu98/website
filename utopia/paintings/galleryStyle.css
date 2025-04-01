@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  background-image: url('assets/bg_dktp.png'); /* Replace with wall texture */
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  @media screen and (max-width: 768px)
+  {
+      background-image: url('assets/bg_mob.png');
+  }
+  background-repeat: repeat-x;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  text-align: center;
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+  width: 200px;
+  height: 300px;
+  background: #fff;
+  border: 5px solid black;
+  border-radius: 5px;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.pagination {
+  position: fixed; /* Keeps it at the bottom of the page */
+  bottom: 10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Popup Modal */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.popup-content {
+  position: relative;
+  background: white;
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup img {
+  max-width: 100%;
+  border: 5px solid black;
+}
+
+.popup .details {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.popup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 140px;  /* Adjust the size of images for smaller screens */
+    height: 210px; /* Adjust height accordingly */
+  }
+
+  .gallery-container {
+    padding: 20px;
+  }
+}
+
+/* Show only 3 items at a time on desktop */
+@media (min-width: 769px) {
+  .gallery-item {
+    width: 200px;  /* Maintain default size on desktop */
+    height: 300px;
+  }}
+
+@media (max-width: 768px) {
+  .gallery-item {
+        width: 200px; /* Adjust the size of images for smaller screens */
+        height: 300px; /* Adjust height accordingly */
+  }
+
+  .gallery-container {
+        padding: 20px;
+  }    
+}
+
+.arrow {
+  position: static; /* Remove absolute positioning */
+  display: inline-block; /* Make them inline for centering */
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px 10px; /* Adjust for button size */
+  margin: 10px; /* Add spacing between buttons */
+  z-index: 999;
+  text-align: center;
+}
+
+.arrow:hover {
+  background: rgba(64, 63, 63, 0.9);
+}
+
+.exit-button{
+  margin-top: 20px;
+  margin-left: 5px;
+  background-color: black;
+  @media (min-width: 769px) {
+    margin-top: 40px;
+  }
+}
+
+.exit-link{
+  color: #f1f1f1;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:medium
+}

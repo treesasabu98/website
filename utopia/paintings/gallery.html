@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery Wall</title>
+  <link rel="stylesheet" href="galleryStyle.css">
+  
+  
+</head>
+<body>
+  <button class="exit-button">
+    <a href="/utopia/utopia.html" class="exit-link">Exit</a>
+  </button>
+  <div class="gallery-container">
+    <button class="arrow left" id="prev">&lt;</button>
+    <div class="gallery-track" id="galleryTrack">
+      <!-- Images will be dynamically inserted here -->
+    </div>
+    <button class="arrow right" id="next">&gt;</button>
+    <div class="pagination">
+      Wall <span id="currentPage">1</span> of <span id="totalPages">1</span>
+    </div>
+  </div>
+
+  <!-- Popup Modal -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <button class="close-btn" id="closePopup">&times;</button>
+      <img id="popupImage" src="" alt="Art">
+      <div class="details" id="popupDetails"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
