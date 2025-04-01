@@ -94,6 +94,8 @@ body {
   width: 90%;
   border-radius: 10px;
   text-align: center;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .popup img {
