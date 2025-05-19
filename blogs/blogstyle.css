@@ -120,3 +120,122 @@ body {
         right: 0;
     }
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000; /* Netflix background */
+    color: #fff;
+  }
+  .trending-blog-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .trending-blog-date {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 0.25rem;
+  }
+  .trending-blog-content {
+    font-size: 1rem;
+    color: #eee;
+  }
+  .blog-tile {
+    background-color: #111; /* Dark background for tiles */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    border: 1px solid #222;
+  }
+  .blog-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border-color: #444;
+  }
+  .blog-tile-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .blog-tile-date {
+    font-size: 0.75rem;
+    color: #777;
+  }
+  .blog-tile-content {
+    font-size: 0.9rem;
+    color: #eee;
+    display: none; /* Hidden by default, shown on hover */
+  }
+  .blog-tile:hover .blog-tile-content {
+    display: block; /* Show content on hover */
+  }
+  .category-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  .search-bar {
+    background-color: #111;
+    border: 1px solid #444;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .search-input {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    margin-left: 0.5rem;
+    flex: 1;
+    font-size: 1rem;
+    outline: none;
+  }
+  .search-icon {
+    color: #777;
+    font-size: 1.2rem;
+  }
+  .trending-container {
+    position: relative; /* For absolute positioning of controls */
+    margin-bottom: 2rem;
+  }
+
+  .trending-slide {
+      display: none;
+      width: 100%;
+  }
+
+  .trending-slide.active {
+      display: block;
+  }
+
+  .trending-controls {
+      position: absolute;
+      bottom: -2rem; /* Adjust as needed */
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 0.5rem;
+  }
+
+  .control-button {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: #555;
+      cursor: pointer;
+      border: none;
+      outline: none;
+  }
+
+  .control-button.active {
+      background-color: #fff;
+  }
+
+  .control-button:hover {
+      background-color: #777;
+  }

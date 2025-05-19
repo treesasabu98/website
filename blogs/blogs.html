@@ -3,6 +3,11 @@
     <head>
         <title>Projects</title>
         <link rel="icon" href="assets/logo.png"/>
+        <!--Meta Data-->
+        <meta property="og:locale" content="en_US">
+        <meta name="author" content="Treesa Sabu">
+        <meta name="description" content="Read technical blogs on software development, data analytics, SAP Hybris, and more. Explore a mix of insights, tutorials, and occasional non-technical posts.">
+        <meta property="og:description" content="Read technical blogs on software development, data analytics, SAP Hybris, and more. Explore a mix of insights, tutorials, and occasional non-technical posts.">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YS13ZW2PLP"></script>
         <script>
@@ -17,6 +22,11 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" href="blogstyle.css">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blogs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
         <header>
@@ -35,8 +45,240 @@
                 </ul>
             </nav>
         </header>
-        <div>
-            <h1>Word under Progress</h1>
-        </div>
+        <body class="bg-black text-white p-4">
+            <header class="py-4">
+                <h1 class="text-3xl font-bold text-red-600">My Blogs</h1> </header>
+        
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search blogs..." class="search-input">
+                <i class="fas fa-search search-icon">🔍</i> </div>
+        
+            <section class="trending-container">
+                <h2 class="text-2xl font-bold mb-2">Trending Blogs</h2>
+                <div class="trending-slide active">
+                    <h3 class="trending-blog-title" id="trending-title-1"></h3>
+                    <p class="trending-blog-date" id="trending-date-1"></p>
+                    <p class="trending-blog-content" id="trending-content-1"></p>
+                </div>
+                <div class="trending-slide">
+                    <h3 class="trending-blog-title" id="trending-title-2"></h3>
+                    <p class="trending-blog-date" id="trending-date-2"></p>
+                    <p class="trending-blog-content" id="trending-content-2"></p>
+                </div>
+                <div class="trending-slide">
+                    <h3 class="trending-blog-title" id="trending-title-3"></h3>
+                    <p class="trending-blog-date" id="trending-date-3"></p>
+                    <p class="trending-blog-content" id="trending-content-3"></p>
+                </div>
+                <div class="trending-controls">
+                    <button class="control-button active" data-slide="0"></button>
+                    <button class="control-button" data-slide="1"></button>
+                    <button class="control-button" data-slide="2"></button>
+                </div>
+            </section>
+        
+        
+        
+            <section class="category-section">
+                <h2 class="category-title">Category 1</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="category1-container">
+                    </div>
+            </section>
+        
+            <section class="category-section mt-8">
+                <h2 class="category-title">Category 2</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="category2-container">
+                    </div>
+            </section>
+        
+            <script>
+                const blogData = [
+                    {
+                        title: "The Future of AI",
+                        date: "2024-01-15",
+                        content: "Artificial intelligence is rapidly evolving and transforming various aspects of our lives...",
+                        category: "Category 1",
+                        url: "#"
+                    },
+                    {
+                        title: "Web Development Trends",
+                        date: "2024-01-20",
+                        content: "Stay updated with the latest trends in web development, including new frameworks, tools, and techniques...",
+                        category: "Category 2",
+                        url: "#"
+                    },
+                    {
+                        title: "Exploring Space",
+                        date: "2024-01-25",
+                        content: "Humanity's quest to explore the vastness of space continues to drive innovation and discovery...",
+                        category: "Category 1",
+                        url: "#"
+                    },
+                    {
+                        title: "Healthy Eating Habits",
+                        date: "2024-02-01",
+                        content: "Learn about the importance of healthy eating habits and how they can improve your overall well-being...",
+                        category: "Category 2",
+                        url: "#"
+                    },
+                     {
+                        title: "Machine Learning Basics",
+                        date: "2024-02-05",
+                        content: "Get started with machine learning and understand the fundamental concepts and algorithms...",
+                        category: "Category 1",
+                         url: "#"
+                    },
+                    {
+                        title: "JavaScript Frameworks",
+                        date: "2024-02-10",
+                        content: "Explore popular JavaScript frameworks like React, Angular, and Vue.js, and their use cases...",
+                        category: "Category 2",
+                        url: "#"
+                    },
+                    {
+                        title: "The Impact of Climate Change",
+                        date: "2024-02-15",
+                        content: "Understand the causes and consequences of climate change and what actions can be taken...",
+                        category: "Category 1",
+                        url: "#"
+                    },
+                    {
+                        title: "Starting a Business",
+                        date: "2024-02-20",
+                        content: "Get tips and advice on how to start your own business, from idea generation to execution...",
+                        category: "Category 2",
+                        url: "#"
+                    },
+                    {
+                        title: "Data Science Explained",
+                        date: "2024-02-25",
+                        content: "Learn the basics of data science, including data analysis, visualization, and machine learning...",
+                        category: "Category 1",
+                        url: "#"
+                    },
+                    {
+                        title: "Web Security Best Practices",
+                        date: "2024-03-01",
+                        content: "Discover essential web security practices to protect your website and users from cyber threats...",
+                        category: "Category 2",
+                        url: "#"
+                    },
+                ];
+        
+                const trendingBlogs = [
+                    blogData[0],
+                    blogData[3],
+                    blogData[6],
+                ];
+        
+                const category1Blogs = blogData.filter(blog => blog.category === "Category 1");
+                const category2Blogs = blogData.filter(blog => blog.category === "Category 2");
+        
+                const trendingTitle1 = document.getElementById("trending-title-1");
+                const trendingDate1 = document.getElementById("trending-date-1");
+                const trendingContent1 = document.getElementById("trending-content-1");
+        
+                const trendingTitle2 = document.getElementById("trending-title-2");
+                const trendingDate2 = document.getElementById("trending-date-2");
+                const trendingContent2 = document.getElementById("trending-content-2");
+        
+                const trendingTitle3 = document.getElementById("trending-title-3");
+                const trendingDate3 = document.getElementById("trending-date-3");
+                const trendingContent3 = document.getElementById("trending-content-3");
+        
+        
+                trendingTitle1.textContent = trendingBlogs[0].title;
+                trendingDate1.textContent = trendingBlogs[0].date;
+                trendingContent1.textContent = trendingBlogs[0].content;
+        
+                trendingTitle2.textContent = trendingBlogs[1].title;
+                trendingDate2.textContent = trendingBlogs[1].date;
+                trendingContent2.textContent = trendingBlogs[1].content;
+        
+                trendingTitle3.textContent = trendingBlogs[2].title;
+                trendingDate3.textContent = trendingBlogs[2].date;
+                trendingContent3.textContent = trendingBlogs[2].content;
+        
+        
+                const category1Container = document.getElementById("category1-container");
+                const category2Container = document.getElementById("category2-container");
+        
+                function createBlogTile(blog) {
+                    const tile = document.createElement("div");
+                    tile.className = "blog-tile";
+                    tile.innerHTML = `
+                        <h3 class="blog-tile-title">${blog.title}</h3>
+                        <p class="blog-tile-date">${blog.date}</p>
+                        <p class="blog-tile-content">${blog.content}</p>
+                    `;
+                    tile.addEventListener("click", () => {
+                        window.location.href = blog.url;
+                    });
+                    return tile;
+                }
+        
+                category1Blogs.forEach(blog => {
+                    const tile = createBlogTile(blog);
+                    category1Container.appendChild(tile);
+                });
+        
+                category2Blogs.forEach(blog => {
+                    const tile = createBlogTile(blog);
+                    category2Container.appendChild(tile);
+                });
+        
+                // Search functionality
+                const searchInput = document.getElementById("search-input");
+                searchInput.addEventListener("input", function() {
+                    const searchTerm = this.value.toLowerCase();
+                    const allTiles = document.querySelectorAll(".blog-tile");
+        
+                    allTiles.forEach(tile => {
+                        const title = tile.querySelector(".blog-tile-title").textContent.toLowerCase();
+                        const content = tile.querySelector(".blog-tile-content").textContent.toLowerCase();
+                        const date = tile.querySelector(".blog-tile-date").textContent.toLowerCase();
+        
+                        if (title.includes(searchTerm) || content.includes(searchTerm) || date.includes(searchTerm)) {
+                            tile.style.display = "block";
+                        } else {
+                            tile.style.display = "none";
+                        }
+                    });
+                });
+        
+        
+                // Trending Blogs Slider
+                let slideIndex = 0;
+                const slides = document.querySelectorAll('.trending-slide');
+                const controls = document.querySelectorAll('.control-button');
+                const intervalTime = 5000; // 5 seconds
+        
+                function showSlide(n) {
+                    slides.forEach(slide => slide.classList.remove('active'));
+                    controls.forEach(control => control.classList.remove('active'));
+                    slideIndex = (n + slides.length) % slides.length; // Wrap around
+                    slides[slideIndex].classList.add('active');
+                    controls[slideIndex].classList.add('active');
+                }
+        
+                function nextSlide() {
+                    showSlide(slideIndex + 1);
+                }
+        
+                let sliderInterval = setInterval(nextSlide, intervalTime);
+        
+                controls.forEach(control => {
+                    control.addEventListener('click', () => {
+                        const slideNumber = parseInt(control.dataset.slide);
+                        showSlide(slideNumber);
+                        clearInterval(sliderInterval); // Reset interval on manual click
+                        sliderInterval = setInterval(nextSlide, intervalTime); // Restart interval
+                    });
+                });
+        
+                // Initial call
+                showSlide(slideIndex);
+            </script>
+        </body>
     </body>
 </html>
