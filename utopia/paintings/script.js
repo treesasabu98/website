@@ -34,6 +34,8 @@ const imageData = [
   { url: "assets/dec_food_flower.jpg", title: "Art Piece 11", description: "This is the fifth art piece." },
   { url: "assets/jan_food_flower.jpg", title: "Art Piece 11", description: "This is the fifth art piece." },
   { url: "assets/feb_food_flower.jpg", title: "Art Piece 11", description: "This is the fifth art piece." },
+  { url: "assets/mar_food_flower.jpg", title: "Art Piece 11", description: "This is the fifth art piece." },
+  { url: "assets/apr_food_flower.jpg", title: "Art Piece 11", description: "This is the fifth art piece." },
 ];
 
 let pageData;
